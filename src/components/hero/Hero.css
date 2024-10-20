@@ -1,0 +1,64 @@
+.HeroContainer{
+    display: flex;
+}
+
+.HeroImage img{
+    border: 15px solid black;
+    border-radius: 15px;
+    width: 500px;
+    height: 420px;
+
+}
+.Generator{
+    background: #0066ff;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0) 0 0 0 3px, rgba(0, 102, 255, 0) 0 0 0 4px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0 21px;
+    height: 46px;
+    line-height: 46px;
+    width: 250px;
+    margin: 14px;
+}
+
+.Explore{
+    width: 250px;
+    height: 46px;
+    border-radius: 10px;
+    color: black;
+    padding: 0 21px;
+    background: white;
+    box-shadow: inset #d8d8da 0 0 0 1px;
+    font-size: 16px;
+    margin-bottom: 14px;
+    display: block;
+
+
+}
+
+.btns{
+    display: block;
+
+}
+
+.HeroText h1{
+    max-width: 400px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: black;
+    line-height: 1.1em;
+    letter-spacing: -0.045em;
+    
+}
+
+.texts{
+    color: #464853;
+    line-height: 1.4em;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    max-width: 400px;
+}
+

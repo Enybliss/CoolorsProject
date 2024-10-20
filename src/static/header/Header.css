@@ -1,0 +1,33 @@
+.Container{
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(80, 51, 244);
+    margin-right: 700px;
+}
+
+.navs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav{
+        margin: 0 10px;
+    }
+
+    button{
+        height: 35px;
+        width: 150px;
+        background-color: blue;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+    }
+}
