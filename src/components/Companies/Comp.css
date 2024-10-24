@@ -1,0 +1,62 @@
+.used-by-section{
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+
+}
+
+.section-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333; /* Darker text color */
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-evenly; /* Ensure icons are spaced evenly */
+    flex-wrap: wrap; /* Wrap icons to the next line on smaller screens */
+    gap: 20px;
+}
+
+.company-icon {
+    font-size: 3rem; /* Adjust size of icons */
+    color: black; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicate that it's interactive */
+}
+
+.company-icon:hover {
+    color: #007bff; /* Hover effect on icons */
+    transform: translateY(-10px); /* Float effect on hover */
+}
+
+
+@media (max-width: 768px) {
+.company-icon {
+    font-size: 2.5rem; /* Adjust size on medium screens */
+      
+    }
+}
+  
+  /* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+.icons-container {
+    justify-content: center; /* Center the icons */
+      
+    }
+.company-icon {
+    font-size: 2rem; /* Smaller size on small screens */
+      
+    }
+    
+    /* Display 4 icons per row */
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-left: 43px;
+ }
+}
+  
+  

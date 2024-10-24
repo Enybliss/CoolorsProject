@@ -1,64 +1,214 @@
-.HeroContainer{
+.HeroContainer {
+    background-color: #fff;
+    height: 100vh; /* Full viewport height */
     display: flex;
-}
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 70px;
+  }
 
-.HeroImage img{
-    border: 15px solid black;
-    border-radius: 15px;
-    width: 500px;
-    height: 420px;
+  .hero-content {
+    display: flex;
+    justify-content: space-between; /* Spread text and image apart */
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px; /* Add padding to sides for spacing */
+  }
 
-}
-.Generator{
-    background: #0066ff;
-    color: white;
-    box-shadow: rgba(255, 255, 255, 0) 0 0 0 3px, rgba(0, 102, 255, 0) 0 0 0 4px;
-    border-radius: 10px;
-    font-size: 16px;
-    padding: 0 21px;
-    height: 46px;
-    line-height: 46px;
-    width: 250px;
-    margin: 14px;
-}
-
-.Explore{
-    width: 250px;
-    height: 46px;
-    border-radius: 10px;
-    color: black;
-    padding: 0 21px;
-    background: white;
-    box-shadow: inset #d8d8da 0 0 0 1px;
-    font-size: 16px;
-    margin-bottom: 14px;
-    display: block;
-
-
-}
-
-.btns{
-    display: block;
-
-}
-
-.HeroText h1{
-    max-width: 400px;
-    font-size: 50px;
+  .HeroText{
+  flex: 1;
+  max-width: 35%; 
+  display: flex;
+  font-family: serif;
+  font-weight: 900;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 70px; 
+  padding-bottom: 40px;
+  }
+  
+.heroTitle{
+    width: 400px;
+    font-size: 70px;
     margin-bottom: 30px;
     color: black;
     line-height: 1.1em;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.04em;
+    font-weight: 1000;
+    
+
     
 }
 
-.texts{
+.Hero-texts {
     color: #464853;
     line-height: 1.4em;
     font-size: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
+    display: block;
+    font-size: 1.2rem; /* Subtitle font size */
     margin-bottom: 35px;
     max-width: 400px;
+  }
+.hero-image{
+   flex: 1;
+   max-width: 65%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-right: 0; 
+
 }
 
+.hero-image img {
+    width: 110%;
+    height: 600px;
+    border-radius: 10px;
+    margin-right: -100px; 
+}
+
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+button {
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Transparent button with gray border */
+.transparent-button {
+    background-color: transparent;
+    color: gray;
+    border: 2px solid gray;
+    padding: 10px 21px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    font-size: 16px;
+
+}
+
+
+/* Medium screens (tablets, small desktops) */
+@media (max-width: 1024px) {
+    .HeroContainer {
+      flex-direction: column; /* Stack image and text vertically */
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    .hero-text {
+      max-width: 80%; /* Increase text section width */
+      margin: 0 0 20px 0; /* Adjust margin */
+    }
+  
+    .hero-title {
+      font-size: 3rem; /* Reduce title size */
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem; /* Adjust subtitle size */
+    }
+  
+    .hero-image {
+      order: -1; /* Make the image appear before the text */
+      margin-bottom: 20px; /* Add space below the image */
+    }
+  
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      margin-right: 0; /* Reset margin */
+      border-radius: 8px; /* Slight rounding */
+    }
+  }
+
+  .product-hunt-badge {
+    display: block; /* Ensures it behaves as a block element */
+    margin: 20px auto; /* Centers the badge */
+    width: 225px; /* Default width */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .product-hunt-badge {
+      width: 180px; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 768px) {
+    .HeroContainer {
+      height: auto; /* Allow hero section to grow with content */
+      padding: 20px 0; /* Add some top-bottom padding */
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+  
+    .HeroText {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .HeroTitle {
+      font-size: 2.5rem; /* Smaller title */
+    }
+  
+    .Hero-texts {
+      font-size: 0.9rem; /* Smaller subtitle */
+      margin-bottom: 20px;
+    }
+  
+    .hero-buttons {
+      gap: 10px; /* Reduce space between buttons */
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px; /* Adjust button size */
+    }
+  
+    .transparent-button {
+      padding: 12px; /* Adjust transparent button size */
+    }
+  
+    .hero-image {
+      order: -1; /* Ensure image appears first */
+      margin-bottom: 20px;
+    }
+  
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      margin: 0; /* No negative margin */
+    }
+  }
+  
+  /* Extra small screens (mobile devices under 500px) */
+  @media (max-width: 500px) {
+    .HeroTitle {
+      font-size: 2rem; /* Further reduce title size */
+    }
+  
+    .Hero-texts {
+      font-size: 0.8rem; /* Smaller subtitle */
+    }
+  
+    .transparent-button {
+      font-size: 0.8rem; /* Reduce button font size */
+    }
+  }

@@ -1,33 +1,33 @@
-import MyImage from '../../assets/images/homepage_hero_palettes.png'
-import CoolorsImage from  '../../assets/images/coolorsImage.png'
 import './Hero.css'
+import Button from "../../shared/Button"
 
 const Hero = () => {
     return(
       <div className="HeroContainer">
-        <div className="HeroText">
-            <h1>The Super fast color Palette</h1>
-            <p className='texts'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint debitis quaerat omnis consequatur similique iste officia</p>
+        <div className='hero-content'>
+          <div className="HeroText">
+            <h1 className='heroTitle'>The Super<span>fast</span>  color Palette generator! </h1>
+           <p className='Hero-texts'> Create the perfect palette or get inspired by   thousands of beautiful color schemes. </p>
 
-            <div className='btns'>
-              <button className='Generator'>Start the generator</button>
-             <button className='Explore'>Expore trending Palettes</button>
+            <div className="hero-buttons">
+             {/* First button */}
+             <Button bgColor="#0073ff" text="Start The Generator" />
 
-             <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=9917&theme=light&period=monthly" alt="" />
+             {/* Second button with transparent styling */}
+             <button className="transparent-button">
+               Explore Trending Palettes
+             </button>
             </div>
-           
-          
-        </div>
 
-        <div className='ParentsImage'>
-          <div className="HeroImage">
-            <img src={MyImage} alt="" />
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=9917&theme=light&period=monthly"
+            alt="Product Hunt Badge"
+            className="product-hunt-badge"/>
           </div>
-          <div className='ChildImage'>
-            <img src={CoolorsImage} alt="" />
+
+          <div className='hero-image'>
+            <img src="https://res.cloudinary.com/df5zacepv/image/upload/v1729591476/homepage_hero_palettes_widlyc.jpg" alt="" />
           </div>
-        
-        </div>
+        </div> 
       </div>
     )
   }
