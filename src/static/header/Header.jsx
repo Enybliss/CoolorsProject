@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react'; // Import React and useState
 import './Header.css';
 import Button from '../../shared/Button'; // Adjust path based on your folder structure
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
@@ -31,7 +31,6 @@ const Header = () => {
 
       {/* Sidebar for mobile */}
       <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
-        
         <nav>Tools</nav>
         <nav className='GoPro'>Go Pro</nav>
         <nav>Sign In</nav>
