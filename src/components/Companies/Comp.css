@@ -16,7 +16,9 @@
     display: flex;
     justify-content: space-evenly; /* Ensure icons are spaced evenly */
     flex-wrap: wrap; /* Wrap icons to the next line on smaller screens */
-    gap: 20px;
+    gap: 65px;
+    padding: 10px;
+    align-items: center;
 }
 
 .company-icon {
@@ -26,7 +28,20 @@
     cursor: pointer; /* Indicate that it's interactive */
 }
 
+.company-icon2 {
+    font-size: 3rem; /* Adjust size of icons */
+    color: black; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicate that it's interactive */
+    height: 100px;
+}
+
 .company-icon:hover {
+    color: #007bff; /* Hover effect on icons */
+    transform: translateY(-10px); /* Float effect on hover */
+}
+
+.company-icon2:hover {
     color: #007bff; /* Hover effect on icons */
     transform: translateY(-10px); /* Float effect on hover */
 }
