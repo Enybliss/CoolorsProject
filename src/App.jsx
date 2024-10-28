@@ -1,6 +1,6 @@
-import Header from "./static/header/Header";
-import Home from "./pages/home/Home";
-import Footer from "./static/footer/Footer";
+import Header from "./static/Header/Header";
+import Home from "./pages/Home/Home";
+import Footer from "./static/Footer/Footer";
 
 const App = () => {
   return (
