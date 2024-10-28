@@ -7,9 +7,8 @@ const Button = ({
   children,
   borderRadius = '10px',
   width = 'auto',
-  height = '46',
+  height = '46px', // Add px unit to the default height
   className = '',
-  // lineHeight ='46px'
 }) => {
   const buttonStyle = {
     backgroundColor: bgColor,
@@ -32,10 +31,9 @@ Button.propTypes = {
   borderRadius: PropTypes.string,
   children: PropTypes.node, // Use PropTypes.node for children (includes any renderable content)
   className: PropTypes.string,
-  height: PropTypes.string,
+  height: PropTypes.string, // Expect height as a string, like '46px'
   text: PropTypes.string,
-  width: PropTypes.string,
-  // lineHeight: PropTypes.string,
+  width: PropTypes.string, // Expect width as a string, like 'auto' or '100%'
 };
 
 export default Button;
