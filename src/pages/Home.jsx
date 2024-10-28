@@ -1,6 +1,6 @@
-import Hero from "../components/Hero/Hero"
-import SuperApps from "../components/SuperApps/SuperApps"
-import Comp from "../components/Companies/Comp";
+import Hero from "../components/Hero/Hero.jsx"
+import SuperApps from "../components/SuperApps/SuperApps.jsx"
+import Comp from "../components/Companies/Comp.jsx";
 import './Home.css'
 
 
