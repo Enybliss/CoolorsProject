@@ -1,4 +1,4 @@
-import Hero from "../../components/hero/Hero"
+import Hero from "../../components/Hero/Hero"
 import SuperApps from "../../components/SuperApps/SuperApps"
 import Comp from "../../components/Companies/Comp";
 import './Home.css'
