@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Import React and useState
 import './Header.css';
-import Button from '../../shared/Button'; // Adjust path based on your folder structure
+import Button from '../shared/Button'; // Adjust path based on your folder structure
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 
 const Header = () => {

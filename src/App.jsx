@@ -1,4 +1,4 @@
-import Header from "./static/Header/Header";
+import Header from "./static/Header";
 import Home from "./pages/Home/Home";
 import Footer from "./static/Footer/Footer";
 
