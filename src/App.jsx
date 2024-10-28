@@ -1,6 +1,6 @@
-import Header from "./static/Header";
-import Home from "./pages/Home";
-import Footer from "./static/Footer";
+import Header from "./static/Header.jsx";
+import Home from "./pages/Home.jsx";
+import Footer from "./static/Footer.jsx";
 
 const App = () => {
   return (
